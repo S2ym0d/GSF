@@ -1,0 +1,16 @@
+<h2>Strony:</h2>
+
+<ul>
+  <li *ngFor="let strona of listaStron" (click)="onClick(strona)" [class.selected]="strona === selectedPage">
+    <div *ngIf="strona !== selectedPage">
+      {{strona.nazwa}}
+    </div>
+    <div *ngIf="strona === selectedPage">
+      {{strona.nazwa | uppercase}}<br>
+      Likes: {{strona.like}}<br>
+      Likes rise: {{strona.like_rise}}   <a routerLink="/strona/{{selectedPage.id}}">IDŹ DO STRONY</a>
+    </div>
+  </li>
+</ul>
+<button (click)="WLewo()"> < </button>
+<button (click)="WPrawo()"> > </button>

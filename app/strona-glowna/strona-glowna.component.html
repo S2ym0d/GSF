@@ -1,0 +1,10 @@
+<h3>Strona główna</h3>
+<div id="listaStron">
+<a *ngFor="let strona of strony" routerLink="/strona/{{strona.id}}">
+  <div>
+      Nazwa: {{strona.nazwa | uppercase}} <br>
+      Like: {{strona.like}} <br>
+      Like rise: {{strona.like_rise}}
+  </div>
+</a>
+</div>
