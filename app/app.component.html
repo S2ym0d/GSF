@@ -1,6 +1,13 @@
-<h1>Giełda stron facebookowych</h1>
-<nav>
-    <a routerLink="/strona-glowna">Strona główna</a>
-    <a routerLink="/lista-stron">Lista stron</a>
-</nav>
+<div id="main-nav-bar">
+  <h1>Giełda Stron Facebookowych</h1>
+
+  <nav>
+    <a routerLink="/strona-glowna"><span>Strona główna</span></a>
+    <a routerLink="/oferty/1"><span>Oferty</span></a>
+    <a routerLink="/logowanie" class="loginUser" *ngIf="!loggedInUser; else userLink"><span>Logowanie</span></a>
+    <ng-template #userLink><a class="loginUser"><span>Konto: {{loggedInUser.name}}</span></a></ng-template>
+  </nav>
+
+</div>
+
 <router-outlet></router-outlet>

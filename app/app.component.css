@@ -1,7 +1,22 @@
+#main-nav-bar {
+    border-bottom-style: solid;
+}
 
 a {
-    margin: 5px;
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: black;
+}
+
+#main-nav-bar a{
+    margin: 5px;
+    display: inline-block;
+}
+
+#main-nav-bar span{
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.loginUser {
+    float: right;
 }

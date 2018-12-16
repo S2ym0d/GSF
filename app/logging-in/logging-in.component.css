@@ -1,0 +1,8 @@
+div {
+    text-align: center;
+    margin: 10%;
+}
+label {
+    margin: 5px;
+    display: inline-block;
+}
